@@ -1,15 +1,15 @@
-# vue-fullcalendar
+# vue-fullcalendar-simple
 [![npm version](https://badge.fury.io/js/vue-full-calendar.svg)](https://badge.fury.io/js/vue-full-calendar)
 [![Build Status](https://travis-ci.org/CroudSupport/vue-fullcalendar.svg?branch=master)](https://travis-ci.org/CroudSupport/vue-fullcalendar)
 
 
 ## Installation
 ```
-npm install --save vue-full-calendar
+npm install --save vue-fullcalendar-simple
 ```
 Or for Vue 1.x users
 ```
-npm install --save vue-full-calendar@0.0.3
+npm install --save vue-fullcalendar-simple@0.0.3
 ```
 
 Installing the plugin will globally add the `full-calendar` component to your project.
@@ -49,7 +49,7 @@ https://github.com/BrockReece/vue-fullcalendar-example
 or try out this [Code Sandbox](https://codesandbox.io/s/5xlp873rkl)
 
 ### Scheduler
-For those wanting to use the scheduler plugin, this [Code Sandbox](https://codesandbox.io/s/qlp8jvko3j) shows you a full working example. 
+For those wanting to use the scheduler plugin, this [Code Sandbox](https://codesandbox.io/s/qlp8jvko3j) shows you a full working example.
 
 ## Basic Usage
 
@@ -175,7 +175,7 @@ You can edit the look and feel of fullcalendar by passing through extra props. T
 - __selectHelper__ - [true] - [docs](http://fullcalendar.io/docs/selection/selectHelper/)
 - __config__ - [true] - Pass your own custom config straight through to fullcalendar
 
-## Methods 
+## Methods
 Sometimes you may need to manipulate the Calendar from your parent component, you can use `fireMethod` for this. This works with anything in the [Fullcalendar docs](https://fullcalendar.io/docs/) suffixed with `(method)` and it will dynamically handle as many arguments as needed.
 ```html
 <full-calendar :events="events" ref="calendar" />
@@ -187,7 +187,7 @@ Sometimes you may need to manipulate the Calendar from your parent component, yo
       events: [],
     }
   },
-  
+
   methods: {
     next() {
       this.$refs.calendar.fireMethod('next')

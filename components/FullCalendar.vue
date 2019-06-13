@@ -1,5 +1,5 @@
 <template>
-    <div ref="calendar" id="calendar"></div>
+    <div ref="calendar" id="calendar" class="agzcaleeeendar"></div>
 </template>
 
 <script>
@@ -89,7 +89,7 @@
                         }
                         self.$emit('event-render', ...args)
                     },
-                    
+
                     viewRender(...args) {
                         if (this.sync) {
                             self.events = cal.fullCalendar('clientEvents')
